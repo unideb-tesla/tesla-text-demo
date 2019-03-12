@@ -81,7 +81,7 @@ public class TeslaClient {
 		} else if (object instanceof Packet) {
 
 			Packet packet = (Packet) object;
-			handlePackage(packet);
+			handlePacket(packet);
 
 		}
 
@@ -110,7 +110,7 @@ public class TeslaClient {
 
 	}
 
-	private void handlePackage(Packet packet) {
+	private void handlePacket(Packet packet) {
 
 		// if we didn't get a disclosure schedule yet, throw away all packets
 		if (disclosureSchedule == null) {
